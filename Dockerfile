@@ -1,7 +1,6 @@
 FROM docker.io/golang:1.23 AS builder
 
-ARG REMOTE_SOURCE=/go/src/github.com/rbaturov/telco-reference
-WORKDIR ${REMOTE_SOURCE}
+WORKDIR /go/src/github.com/rbaturov/telco-reference
 
 COPY . .
 
