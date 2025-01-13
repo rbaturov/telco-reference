@@ -1,7 +1,5 @@
 FROM registry.access.redhat.com/ubi9/ubi-minimal
-
 COPY ./telco-core /usr/share/telco-core-rds
-
 RUN microdnf install -y tar && \
     microdnf clean -y all
 
